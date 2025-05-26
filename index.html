@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="escape.css">
+    <title>Escape Monsters| SAAD</title>
+</head>
+
+<body>
+
+    <div id="presentationUI">
+        <div>
+            <img src="intropic1.png" alt="" srcset="" id="preUI">
+
+        </div>
+        <p id="preUIpara">Welcome to <span id="saadUI"> SAAD </span> plays</p>
+        <p id="startUI">Tap to start...</p>
+
+    </div>
+
+    <div class="container">
+        <h1>Welcome to ESCAPE MONSTERS</h1>
+
+        <h2>Seconds You Alive <span id="score"> 00</span></h2>
+        
+        <h2 class="highscorepara">High Score <span id="highscore">00</span></h2>
+
+        <div class="label">
+
+            <label for="inputmobile">Set Amount of Enemies </label>
+            <p id="preference">Prefered 27</p>
+            <!-- inputs for mobile -->
+            <select id="inputmobile">
+
+                <option value="">Dfault 15</option>
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+                <option value="15">15</option>
+                <option value="18">18</option>
+                <option value="21">21</option>
+                <option value="25">25</option>
+            </select>
+
+            <!-- inputs for laprop -->
+            <input type="text" name="" class="difficulty" placeholder="Default 27" id="inputlaptop">
+
+
+
+            <p id="validation"></p>
+
+        </div>
+        <button id="startBTN">Start New Game</button>
+        <p class="instruction">For better experience access this game in Laptops or PCs</p>
+
+    </div>
+    <canvas></canvas>
+    <script src="escape.js"></script>
+</body>
+
+</html>
