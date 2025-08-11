@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Escape monster icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="escape.css">
     <title>Escape Monsters| SAAD</title>
 </head>
@@ -24,7 +25,7 @@
         <h1>Welcome to ESCAPE MONSTERS</h1>
 
         <h2>Seconds You Alive <span id="score"> 00</span></h2>
-        
+
         <h2 class="highscorepara">High Score <span id="highscore">00</span></h2>
 
         <div class="label">
@@ -59,6 +60,19 @@
     </div>
     <canvas></canvas>
     <script src="escape.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then((reg) => {
+                        console.log("service worker registor at", reg.scope)
+                    }).catch((err) => {
+                        console.log("service worker registor failed ", err)
+                    })
+            })
+        }
+
+    </script>
 </body>
 
 </html>
